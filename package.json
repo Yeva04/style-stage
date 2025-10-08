@@ -4,10 +4,10 @@
   "description": "A minimal starter for Style Stage submissions that includes the source Sass used to create the base Style Stage theme, and the source HTML.",
   "main": "index.html",
   "scripts": {
-    "scss": "sass --no-source-map sass:public",
-    "watch": "sass --no-source-map --watch sass:public",
+    "scss": "npx sass --no-source-map sass:public",
+    "watch": "npx sass --no-source-map --watch sass:public",
     "serve": "browser-sync start --server public --files public --port 1337",
-    "start": "npm-run-all scss --parallel watch serve"
+    "start": "npx npm-run-all scss --parallel watch serve"
   },
   "keywords": [
     "style stage",

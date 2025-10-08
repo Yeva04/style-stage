@@ -20,3 +20,44 @@
 @import "footer";
 @import "links";
 
+// Neon Arcade Fever Teaser - Quick Glow for Header
+$neon-pink: #FF69B4;
+$neon-blue: #00BFFF;
+
+header {
+  background: #000;  // Black arcade bg
+  color: $neon-pink;
+  text-shadow: 0 0 10px $neon-pink;  // Pink glow
+  padding: 2rem;
+  border-bottom: 3px solid $neon-blue;
+  box-shadow: 0 0 20px $neon-blue;  // Blue underglow
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;  // Pixel font (add via Google Fonts link in index.html head if needed: <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">)
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+nav a {
+  background: $neon-blue;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 5px $neon-blue;
+  transition: box-shadow 0.3s;
+}
+
+nav a:hover {
+  box-shadow: 0 0 15px $neon-pink;  // Hover glow shift
+}
