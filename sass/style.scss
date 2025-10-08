@@ -25,16 +25,16 @@ $neon-pink: #FF69B4;
 $neon-blue: #00BFFF;
 
 header {
-  background: #000;  // Black arcade bg
+  background: #000;
   color: $neon-pink;
-  text-shadow: 0 0 10px $neon-pink;  // Pink glow
+  text-shadow: 0 0 10px $neon-pink;
   padding: 2rem;
   border-bottom: 3px solid $neon-blue;
-  box-shadow: 0 0 20px $neon-blue;  // Blue underglow
+  box-shadow: 0 0 20px $neon-blue;
 }
 
 h1 {
-  font-family: 'Press Start 2P', cursive;  // Pixel font (add via Google Fonts link in index.html head if needed: <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">)
+  font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
   text-align: center;
   margin: 0;
@@ -59,5 +59,9 @@ nav a {
 }
 
 nav a:hover {
-  box-shadow: 0 0 15px $neon-pink;  // Hover glow shift
+  box-shadow: 0 0 15px $neon-pink;
+}
+
+body {
+  box-shadow: inset 0 0 50px rgba(0, 191, 255, 0.1);  // Subtle blue arcade glow
 }
