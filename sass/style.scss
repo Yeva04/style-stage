@@ -4,6 +4,7 @@
 @import "global/theme";  // Neon vars
 
 @import "composition/layout";  // .container for grids
+@import "utilities/mixins";  // @mixin neon-glow
 
 @import "blocks/header";  // Neon header block
 @import "blocks/nav";     // Nav button styles
@@ -16,7 +17,6 @@
 @import "blocks/styles";   // #styles featured ul
 @import "blocks/footer";   // page-footer
 
-@import "utilities/mixins";  // @mixin neon-glow
 
 // Exceptions (accessibility)
 @media (prefers-reduced-motion: reduce) {

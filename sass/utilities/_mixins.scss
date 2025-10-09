@@ -1,3 +1,4 @@
+// utilities/_mixins.scss
 @mixin neon-glow($color: var(--neon-pink), $intensity: 10px) {
   box-shadow: 0 0 $intensity $color;
   transition: box-shadow 0.3s ease;
