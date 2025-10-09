@@ -1,0 +1,16 @@
+@mixin neon-glow($color: var(--neon-pink), $intensity: 10px) {
+  box-shadow: 0 0 $intensity $color;
+  transition: box-shadow 0.3s ease;
+}
+
+@mixin arcade-button {
+  background: var(--neon-blue);
+  color: var(--arcade-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  @include neon-glow(var(--neon-blue));
+  &:hover {
+    @include neon-glow(var(--neon-pink), 15px);
+  }
+}

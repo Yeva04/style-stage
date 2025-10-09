@@ -1,10 +1,10 @@
-/* Error: Undefined variable.
- *    ,
- * 79 |   @return "%23" + str-slice("#{color($color)}", 2, -1);
- *    |                                      ^^^^^^
- *    '
- *   sass\global\_theme.scss 79:38  @import
- *   sass\style.scss 4:9            root stylesheet */
+/* Error: Undefined mixin.
+ *   ,
+ * 5 |   @include neon-glow(var(--neon-pink), 15px);
+ *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\blocks\_about.scss 5:3  @import
+ *   sass\style.scss 12:9         root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: Undefined variable.\a    \2577 \a 79 \2502    @return "%23" + str-slice("#{color($color)}", 2, -1);\a    \2502                                       ^^^^^^\a    \2575 \a   sass\\global\\_theme.scss 79:38  @import\a   sass\\style.scss 4:9            root stylesheet';
+  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502    @include neon-glow(var(--neon-pink), 15px);\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\blocks\\_about.scss 5:3  @import\a   sass\\style.scss 12:9         root stylesheet";
 }
