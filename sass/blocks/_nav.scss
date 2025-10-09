@@ -1,4 +1,58 @@
-nav {
+// blocks/_nav.scss
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+nav a {
+  background: $neon-blue;
+  color: $arcade-bg;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 5px $neon-blue;
+  transition: box-shadow 0.3s;
+}
+
+nav a:hover {
+  box-shadow: 0 0 15px $neon-pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav {
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -33,3 +87,4 @@ nav {
     }
   }
 }
+*/

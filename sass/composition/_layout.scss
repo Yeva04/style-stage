@@ -1,5 +1,13 @@
-// stylelint-disable no-descending-specificity
-body {
+// composition/_layout.scss
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+
+/*body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
@@ -52,3 +60,4 @@ article,
   grid-gap: 1em;
   list-style: none;
 }
+*/

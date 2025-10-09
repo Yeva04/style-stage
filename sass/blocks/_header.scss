@@ -1,4 +1,45 @@
+// blocks/_header.scss
 header {
+  background: $arcade-bg;
+  color: $neon-pink;
+  text-shadow: 0 0 10px $neon-pink;
+  padding: 2rem;
+  border-bottom: 3px solid $neon-blue;
+  box-shadow: 0 0 20px $neon-blue;
+}
+
+h1 {
+  font-family: $pixel-font;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header {
   --logomark-height: 3em;
   --logomark-padding: 0 1em;
 
@@ -21,3 +62,4 @@ header {
     max-width: 30ch;
   }
 }
+*/

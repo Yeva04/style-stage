@@ -1,4 +1,50 @@
-$color-primary: #3a00ff !default;
+// global/_theme.scss
+$neon-pink: #FF69B4;
+$neon-blue: #00BFFF;
+$arcade-bg: #000;
+$pixel-font: 'Press Start 2P', cursive;
+
+:root {
+  --neon-pink: #{$neon-pink};
+  --neon-blue: #{$neon-blue};
+}
+
+body {
+  background: $arcade-bg;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  box-shadow: inset 0 0 50px rgba(0, 191, 255, 0.1);  // Arcade glow
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$color-primary: #3a00ff !default;
 $color-primary-alt: #6f6ffd !default;
 $color-secondary: #d42257 !default;
 $color-background: #d2fbf7 !default;
@@ -67,3 +113,4 @@ $font-sizes: (
 
   --border-radius: #{$border-radius};
 }
+*/
