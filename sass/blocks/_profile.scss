@@ -1,0 +1,14 @@
+#profile {
+  background: var(--arcade-bg);
+  padding: 1rem;
+  border: 2px solid var(--neon-blue);
+  @include neon-glow(var(--neon-blue), 10px);
+  border-radius: 8px;
+}
+
+#profile ul {
+  list-style: none;
+  padding: 0;
+  color: var(--text-base);
+  font-family: 'Courier New', monospace;
+}

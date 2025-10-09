@@ -1,0 +1,21 @@
+a:not(nav a) {
+  color: var(--neon-blue);
+  text-decoration: none;
+  @include neon-glow(var(--neon-blue), 5px);
+  &:hover {
+    @include neon-glow(var(--neon-pink), 10px);
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--neon-blue);
+  color: var(--arcade-bg);
+  padding: 0.5rem;
+  @include neon-glow(var(--neon-blue));
+  &:focus {
+    top: 0;
+  }
+}

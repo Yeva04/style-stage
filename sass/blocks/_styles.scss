@@ -1,0 +1,13 @@
+#styles {
+  background: var(--arcade-bg);
+  padding: 1rem;
+  border: 2px solid var(--neon-pink);
+  @include neon-glow(var(--neon-pink), 10px);
+  border-radius: 8px;
+}
+
+#styles ul {
+  list-style: none;
+  padding: 0;
+  color: var(--text-base);
+}

@@ -1,0 +1,14 @@
+#contribute {
+  background: var(--arcade-bg);
+  padding: 2rem;
+  border: 2px solid var(--neon-pink);
+  @include neon-glow(var(--neon-pink), 15px);
+  border-radius: 10px;
+}
+
+#contribute ol {
+  list-style: decimal inside;
+  color: var(--neon-blue);
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+}

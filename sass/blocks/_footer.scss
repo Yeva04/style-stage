@@ -1,0 +1,8 @@
+page-footer {
+  background: linear-gradient(180deg, var(--neon-pink), var(--neon-blue));
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-base);
+  @include neon-glow(var(--neon-blue), 10px);
+  font-family: 'Courier New', monospace;
+}

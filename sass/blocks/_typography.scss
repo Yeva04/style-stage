@@ -1,0 +1,13 @@
+h2, h3 {
+  font-family: $pixel-font;
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+  margin-bottom: 1rem;
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+p {
+  font-family: 'Courier New', monospace;
+  color: var(--text-base);
+  line-height: 1.5;
+}

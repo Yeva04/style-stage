@@ -1,0 +1,7 @@
+#guidelines {
+  background: var(--arcade-bg);
+  padding: 2rem;
+  border: 2px solid var(--neon-blue);
+  @include neon-glow(var(--neon-blue), 15px);
+  border-radius: 10px;
+}
