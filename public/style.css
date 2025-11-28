@@ -61,15 +61,23 @@ select {
   --neon-pink: #FF69B4;
   --neon-blue: #00BFFF;
   --arcade-bg: #000;
+  --pixel-font: "Press Start 2P", cursive;
   --text-base: #fff;
+  --shadow-dark: rgba(0,0,0,0.5);
+  --shadow-light: rgba(255,255,255,0.3);
 }
 
 body {
-  background: #000;
+  background: var(--arcade-bg);
   color: var(--text-base);
   font-family: "Courier New", monospace;
   box-shadow: inset 0 0 50px rgba(0, 191, 255, 0.1);
   min-height: 100vh;
+}
+
+.dark-mode {
+  --arcade-bg: #222;
+  --text-base: #eee;
 }
 
 .container {
@@ -94,6 +102,26 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 header {
   background: var(--arcade-bg);
   color: var(--neon-pink);
@@ -105,12 +133,21 @@ header {
 }
 
 h1 {
-  font-family: "Press Start 2P", cursive;
+  font-family: var(--pixel-font);
   font-size: clamp(1.5rem, 5vw, 2rem);
   text-align: center;
   margin: 0;
+  animation: pulse 2s infinite;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -128,14 +165,19 @@ nav a {
   text-decoration: none;
   box-shadow: 0 0 10px var(--neon-blue);
   transition: box-shadow 0.3s ease;
+  font-family: var(--pixel-font);
+  font-size: 0.8rem;
 }
 nav a:hover {
   box-shadow: 0 0 15px var(--neon-pink);
   transition: box-shadow 0.3s ease;
 }
+nav a:hover {
+  animation: glitch 0.5s infinite;
+}
 
 h2, h3 {
-  font-family: "Press Start 2P", cursive;
+  font-family: var(--pixel-font);
   color: var(--neon-pink);
   text-shadow: 0 0 5px var(--neon-pink);
   margin-bottom: 1rem;

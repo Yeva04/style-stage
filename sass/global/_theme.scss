@@ -1,23 +1,24 @@
-// global/_theme.scss
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-$neon-pink: #FF69B4;
-$neon-blue: #00BFFF;
-$arcade-bg: #000;
-$pixel-font: 'Press Start 2P', cursive;
-$text-base: #fff;
-
 :root {
-  --neon-pink: #{$neon-pink};
-  --neon-blue: #{$neon-blue};
-  --arcade-bg: #{$arcade-bg};
-  --text-base: #{$text-base};
+  --neon-pink: #FF69B4;
+  --neon-blue: #00BFFF;
+  --arcade-bg: #000;
+  --pixel-font: 'Press Start 2P', cursive;
+  --text-base: #fff;
+  --shadow-dark: rgba(0,0,0,0.5);
+  --shadow-light: rgba(255,255,255,0.3);
 }
 
 body {
-  background: $arcade-bg;
+  background: var(--arcade-bg);
   color: var(--text-base);
   font-family: 'Courier New', monospace;
   box-shadow: inset 0 0 50px rgba(0, 191, 255, 0.1);
   min-height: 100vh;
+}
+
+.dark-mode {
+  --arcade-bg: #222;
+  --text-base: #eee;
 }

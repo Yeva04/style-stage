@@ -1,5 +1,5 @@
 h2, h3 {
-  font-family: $pixel-font;
+  font-family: var(--pixel-font);
   color: var(--neon-pink);
   text-shadow: 0 0 5px var(--neon-pink);
   margin-bottom: 1rem;

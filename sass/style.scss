@@ -2,10 +2,8 @@
 
 @import "global/reset";  // Normalize
 @import "global/theme";  // Neon vars
-
 @import "composition/layout";  // .container for grids
 @import "utilities/mixins";  // @mixin neon-glow
-
 @import "blocks/header";  // Neon header block
 @import "blocks/nav";     // Nav button styles
 @import "blocks/typography";  // h2/h3/p
